@@ -13,4 +13,3 @@ verb2 = input("Another verb: ")
 print("Now, let's see your story!")
 print("Once upon a time, there was a " ) + adjective1 + " " + noun
 print("It loved to " + verb1 + " ) and " + verb2 + " all " + noun1 + ".")
-print("One day, it met a " + adjective2 + " " +noun2 + ".")
