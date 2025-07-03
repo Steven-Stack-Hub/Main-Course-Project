@@ -10,6 +10,3 @@ noun1 = input("Noun: ")
 noun2 = input("Another noun: ")
 verb1 = input("Verb: ")
 verb2 = input("Another verb: ")
-print("Now, let's see your story!")
-print("Once upon a time, there was a " ) + adjective1 + " " + noun
-print("It loved to " + verb1 + " ) and " + verb2 + " all " + noun1 + ".")
