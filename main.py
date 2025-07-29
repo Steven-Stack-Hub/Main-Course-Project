@@ -350,4 +350,3 @@ len(dogCopy)
 print(len)
 age = 9 
 print(str(age))
-if else(age == 3)
