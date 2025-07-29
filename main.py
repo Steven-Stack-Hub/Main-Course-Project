@@ -346,4 +346,3 @@ print(dog)
 
 dogCopy = dog.copy() # This is a function to copy a dictionary
 print(dog)
-len(dogCopy)
