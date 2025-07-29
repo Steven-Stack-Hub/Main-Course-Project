@@ -346,9 +346,6 @@ print(dog)
 
 dogCopy = dog.copy() # This is a function to copy a dictionary
 print(dog) 
-enumerate # This is a function to enumerate a dictionary, which is a list of tuples
-#Enumerating Lists
-letters = ["a", "b", "c", "d"]
-for index, letter in enumerate(letters):
-    print(index, letter)
-print(list(enumerate(dog))) # This is a function to print the list of tuples of a dictionary
+age = 30
+if age > 18:
+    print("You are an adult")
