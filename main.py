@@ -426,6 +426,8 @@ print(hello("Solly"))
 age = 8 
 
 def test():
+    age = 8 #This is a local variable, which is only available inside the function. Without the `global age` declaration, this `age` is a *different* variable than the `age` defined outside the function.  It *shadows* the outer `age`. Basically it is a variable that is only available inside the function, and it is not available outside the function, which is why it is called a local variable, and will result in a NameError if you try to access it outside the function.
+    
     print(age)
 print(age) #8
 test()#8
