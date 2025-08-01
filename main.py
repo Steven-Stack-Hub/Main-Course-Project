@@ -349,3 +349,83 @@ print(dog)
 age = 30
 if age > 18:
     print("You are an adult")
+    data = {1:'Navin', 2:'Kiran', 3:'Harsh'}
+data[1]
+data[3]
+data.get(1)
+data.get(3)
+print(data.get(3))
+data.get(1, 'Not Found')
+data.get(3, 'Not Found')
+keys = ['Navin', 'Kiran', 'Harsh']
+values = ['Python', 'Java', 'JS']
+data = dict(zip(keys, values))
+
+#data ['Kiran'] #This will result in a TypeError because you are trying to access a dictionary with a value instead of a key
+
+#data['Monika'] = 'CS' #This will result in a KeyError because you are trying to access a dictionary with a key that does not exist
+
+#del data['Harsh'] #This will result in a KeyError because you are trying to delete a key that does not exist
+
+prog = {'JS':'Atom', 'CS':'VS', 'Python':['Pycharm', 'Sublime'], 'Java':{'JSE':'Netbeans', 'JEE':'Eclipse'}}
+print(prog['JS'])
+
+#Sets
+
+
+set1 = {"Roger", "Syd", "Roger"} # This is a set, which is a collection of unique items, which is why Roger is only printed once. There can only be one of each item value in a set.
+
+set2 = {"Sally"}
+
+
+print(list(set1))
+mod = set1 | set2
+mod = set1 > set2
+mod = set1 < set2
+print(len(set2))
+print(set2)
+print(mod) # This is a function to print the intersection of two sets, which is the common items in both sets, in this case it is Roger and Syd. And "mod" is the variable name for the intersection of the two sets
+
+#Functions
+
+def hello(name, age = "my friend"):
+    print("Hello " + name + ", you are " + str(age) + " years old") # This is a function to print a string with a variable in it, in this case the variable is name and age. so basically it will print "Hello Beau, you are 28 years old" for the first function call.
+
+hello("Beau", 28)
+hello("Quincy", 31)
+hello("Flavio", 39)
+hello("Sean", 40)
+
+#Conditional Statement to assign default value for age if it's not given
+def hello(name, age = "my friend"): #
+    if age == "my friend": # This is a conditional statement to check if the age is the default value, if it is then it will print the first line, if it is not then it will print the second line. So basically it will print "Hello Adam, you are my friend" for the first function call, Since it is the default value, When the "age" is not given a value it will print the default value, which is "my friend". And if the age is given a value it will print the second line, which is "Hello Adam, you are 28 years old" for the second function call.
+        print("Hello " + name + ", you are " + age)
+    else:
+        print("Hello " + name + ", you are " + str(age) + " years old") 
+hello("Adam")
+
+def change(value):
+    value["name"] = "Syd"
+
+val = {"name": "Tom"} # The dictionary is called first before the value["name"] = "Syd" function is called, so the change function is called after the dictionary is created.
+change(val)
+
+print(val)
+# "hello()" # This will result in a TypeError 'missing 1 required positional argument, only if it doesn't call the function name like the other 2 functions, or there is no default(else) option argument to print out if it isn't called, because you are trying to call a function with no arguments when it does requires one argument in this case "name" and there would be no default value for it.
+#Functions(Return Statments)
+def hello(name):
+    if not name:
+        return
+    print("Hello " + name + "!")
+    return name, "Larson", 8
+
+print(hello("Solly"))
+
+#Variable Scope
+
+age = 8 
+
+def test():
+    print(age)
+print(age) #8
+test()#8
