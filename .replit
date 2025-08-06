@@ -1,0 +1,6 @@
+language = "python3"
+run = "python3 main_course.py"
+modules = ["python-3.11"]
+
+[nix]
+
