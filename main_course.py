@@ -28,7 +28,7 @@ def check_win(player, computer):
         else:
             return "Rock Smashes Scissors! You lose."
 
-name = "Beaux"
+name = "Steven"
 print(name.upper())  # this is an inline comment
 print(type(name))  # this is a function to print the type of the variable
 
@@ -379,6 +379,8 @@ print(dog)
 age = 30
 if age > 18:
     print("You are an adult")
+
+    #Telusko
     data = {1:'Navin', 2:'Kiran', 3:'Harsh'}
 data[1]
 data[3]
@@ -461,3 +463,192 @@ def test():
     print(age)
 print(age) #8
 test()#8
+
+#Nested Functions
+def talk(phrase):
+    def say(word):
+        print(word)
+    words = phrase.split(' ')
+    for word in words:
+        say(word)
+
+talk('I am going to buy the milk')
+
+
+
+#Telusko: More Variables in Python 
+
+num = 5 # Assigns the integer value 5 to the variable num
+
+print(id(num)) # Prints the memory address of the variable num
+
+name = 'Steven' # Assigns the string value 'Steven' to the variable name
+
+print(id(name)) # Prints the memory address of the variable name
+
+a = 10 # Assigns the integer value 10 to the variable a
+
+b = a # Assigns the value of a (which is 10) to the variable b
+
+print(id(a)) # Prints the memory address of the variable a
+
+print(id(b)) # Prints the memory address of the variable b
+
+print(id(10)) # Prints the memory address of the integer literal 10
+
+k = 10 # Assigns the integer value 10 to the variable k
+
+print(id(k)) # Prints the memory address of the variable k
+
+a = 9 # Assigns the integer value 9 to the variable a
+
+print(id(a)) # Prints the memory address of the variable a
+
+print(id(b)) # Prints the memory address of the variable b (still points to the original 10)
+
+k = a # Assigns the value of a (which is now 9) to the variable k
+
+print(id(k)) # Prints the memory address of the variable k
+
+b = 8 # Assigns the integer value 8 to the variable b
+
+PI = 3.14 # Assigns the float value 3.14 to the variable PI
+
+PI = 3.15 # Assigns the float value 3.15 to the variable PI, overwriting the previous value
+
+print(type(PI)) # Prints the data type of the variable PI
+
+#Telusko: Data Types in Python
+num = 2.5 # Assigns the float value 2.5 to the variable num
+
+print(type(num)) # Prints the data type of the variable num
+
+num = 5 # Assigns the integer value 5 to the variable num, overwriting the previous value
+
+print(type(num)) # Prints the data type of the variable num
+
+num = 6 + 9j  #This is a complex number, assigning the complex number 6 + 9j to the variable num
+
+a = 5.6 # Assigns the float value 5.6 to the variable a
+
+b = int(a) # Converts the float value of a to an integer and assigns it to the variable b
+
+print(type(b)) # Prints the data type of the variable b
+
+k = float(b) # Converts the integer value of b to a float and assigns it to the variable k
+
+print(k) # Prints the value of the variable k
+
+k = 6 # Assigns the integer value 6 to the variable k
+
+c = complex(b, k) # Creates a complex number using b and k as real and imaginary parts, respectively, and assigns it to c
+
+bool = b < k # Checks if b is less than k and assigns the boolean result to the variable bool
+
+print(type(bool)) # Prints the data type of the variable bool
+
+bool = b > k # Checks if b is greater than k and assigns the boolean result to the variable bool
+
+print(int(True)) # Prints the integer representation of True (which is 1)
+
+print(int(False)) # Prints the integer representation of False (which is 0)
+
+lst = [25, 36, 45, 55] # Creates a list of integers and assigns it to the variable lst
+
+a = (25, 36, 45, 55) # Creates a tuple of integers and assigns it to the variable a
+
+print(type(a)) # Prints the data type of the variable a
+
+t = (25, 36, 45, 55) # Creates a tuple of integers and assigns it to the variable t
+
+print(type(t)) # Prints the data type of the variable t
+
+str = "Steven" # Assigns the string value "Steven" to the variable str
+
+st = 'a' # Assigns the string value 'a' to the variable st
+
+print(type(st)) # Prints the data type of the variable st
+
+print(range(0, 10)) # Prints a range object from 0 to 9
+
+print(list(range(10))) # Converts the range object to a list and prints it
+
+print(list(range(2, 10, 2))) # Creates a list of even numbers from 2 to 8 and prints it
+
+print(type(range(10))) # Prints the data type of range(10)
+
+d = {'Steven':'Samsung', 'Kim' : 'iphone', 'John' : 'Pixel' } # Creates a dictionary with string keys and values
+
+print(d.keys()) # Prints the keys of the dictionary d
+
+print(d.values()) # Prints the values of the dictionary d
+
+print(d['Kim']) # Prints the value associated with the key 'Kim' in the dictionary d
+
+print(d.get('John')) # Prints the value associated with the key 'John' in the dictionary d
+
+#Telusko: Operators in Python
+
+x = 2 # Assigns the integer value 2 to the variable x
+
+y = 3 # Assigns the integer value 3 to the variable y
+
+print(x-y) # Prints the result of subtracting y from x
+
+print(x*y) # Prints the result of multiplying x and y
+
+print(x/y) # Prints the result of dividing x by y
+
+x = x + 2 # Adds 2 to the current value of x and assigns the result back to x
+
+x += 2 #This is an increment operator, basically it is the same as x = x + 2, Adds 2 to the current value of x and assigns the result back to x
+
+print(x) # Prints the value of x
+
+x *= 3 #This is a multiplication operator, basically it is the same as x = x * 3, Multiplies the current value of x by 3 and assigns the result back to x
+
+print(x) # Prints the value of x
+
+a,b = 5,6 # Assigns the value 5 to a and 6 to b in a single line
+
+n = 7 # Assigns the integer value 7 to the variable n
+
+print(n) # Prints the value of n
+
+print(-n) # Prints the negation of n
+
+n = -n #This is a negation operator, basically it is the same as n = -n, Negates the value of n and assigns it back to n
+
+print(n) # Prints the value of n
+
+print(a < b) # Checks if a is less than b and prints the boolean result
+
+print(a > b) # Checks if a is greater than b and prints the boolean result
+
+print(a == b) # Checks if a is equal to b and prints the boolean result
+
+a = 6 # Assigns the integer value 6 to the variable a
+
+print(a == b) #This is a comparison operator, basically it is a equal to operator, basically it is the same as a == b, Checks if a is equal to b and prints the boolean result
+
+print(a <= b) #This is a comparison operator, basically it is a less than or equal to operator, basically it is the same as a <= b, Checks if a is less than or equal to b and prints the boolean result
+
+print(a != b) #This is a comparison operator, basically it is a not equal to operator, basically it is the same as a != b, Checks if a is not equal to b and prints the boolean result
+
+a = 5 # Assigns the integer value 5 to the variable a
+
+b = 4 # Assigns the integer value 4 to the variable b
+
+print(a < 8 and b < 5) #This is a logical operator, basically it is a and operator, basically it is the same as a < 8 and b < 5, Checks if a is less than 8 AND b is less than 5, and prints the boolean result
+
+print(a < 8 or b < 2) #This is a logical operator, basically it is a and operator, basically it is the same as a < 8 and b < 2, Checks if a is less than 8 OR b is less than 2, and prints the boolean result
+
+x = True # Assigns the boolean value True to the variable x
+
+print(x) # Prints the value of x
+
+print(not x) # Prints the negation of x
+
+x = not x # Negates the value of x and assigns it back to x
+
+print(x) # Prints the value of x
