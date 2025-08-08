@@ -13,3 +13,13 @@ pydantic
 requests
 uvicorn
 yfinance
+fastapi
+numpy
+pandas
+pydantic
+python-dotenv
+python-multipart
+requests
+ta
+uvicorn
+yfinance
