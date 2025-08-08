@@ -18,3 +18,7 @@ mode = "sequential"
 task = "shell.exec"
 args = "cd backend && python main.py"
 
+[[ports]]
+localPort = 8000
+externalPort = 80
+
