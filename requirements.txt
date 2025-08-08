@@ -1,0 +1,15 @@
+
+fastapi
+uvicorn
+yfinance
+pandas
+numpy
+pydantic
+python-cors
+fastapi
+numpy
+pandas
+pydantic
+requests
+uvicorn
+yfinance
