@@ -3,22 +3,21 @@ run = "python3 main_course.py"
 modules = ["python-3.11"]
 
 [nix]
-channel = "stable-25_05"
-packages = ["glibcLocales", "libxcrypt"]
 
-[workflows]
-runButton = "Start Trading Bot Backend"
+#channel = "stable-25_05"
+#[workflows]
+#runButton = "Start Trading Bot Backend"
 
-[[workflows.workflow]]
-name = "Start Trading Bot Backend"
-author = 43372551
-mode = "sequential"
+#[[workflows.workflow]]
+#name = "Start Trading Bot Backend"
+#author = 43372551
+#mode = "sequential"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd backend && python main.py"
+#[[workflows.workflow.tasks]]
+#task = "shell.exec"
+#args = "cd backend && python main.py"
 
-[[ports]]
-localPort = 8000
-externalPort = 80
+#[[ports]]
+#localPort = 8000
+#externalPort = 80
 
